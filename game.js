@@ -177,6 +177,7 @@ function resetGame() {
   $('body').removeClass("victory");
   $(".restart").addClass("hide");
   $(".container").removeClass("hide");
+  $(".image").addClass("hide");
   gamePattern = [];
   buttonPokemon = ["charmander", "squirtle", "pikachu", "bulbasaur"];
   userClickedPattern = [];
@@ -214,6 +215,7 @@ function playGameOver() {
 //function of animating color when user makes mistake
 function animateGameOver() {
   $('body').addClass("game-over");
+  $("#img-go").removeClass("hide");
 }
 
 function playEvolve() {
@@ -239,4 +241,5 @@ function playVictory() {
 function animateVictory() {
   $('body').addClass("victory");
   $("#level-title").html("Level " + level + "<br/>" + "You caught them all!");
+  $("#img-vic").removeClass("hide");
 }

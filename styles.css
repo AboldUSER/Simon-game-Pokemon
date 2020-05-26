@@ -29,21 +29,18 @@ body {
   transition: all 0.5s ease;
 }
 
+.image {
+  height: 400px;
+  margin: 5%;
+}
+
 .game-over {
   background-color: #C04C4B;
-  background-image: url("./images/team_rocket.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   opacity: 0.9;
 }
 
 .victory {
   background-color: #E7E7E6;
-  background-image: url("./images/victory.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   opacity: 0.9;
   color: #464646;
 }
@@ -108,7 +105,6 @@ body {
   color: #E7E7E6;
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin: 50px;
   padding: 6px 24px;
   text-decoration: none;
   text-shadow: 2px 0 #2e2e2e;
